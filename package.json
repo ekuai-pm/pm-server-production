@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "serve": "nodemon index.js"
+    "start": "node index.js"
   },
   "dependencies": {
     "axios": "^0.21.0",
