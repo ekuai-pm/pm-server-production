@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const history = require("connect-history-api-fallback");
 const bingImg = require("./routes/bingImg");
-const port = 80;
+const port = process.env.PORT || 8088;
 
 app.use((req, res, next) => {
 	const {origin, Origin, referer, Referer} = req.headers;
